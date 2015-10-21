@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.greeting.GreetingRestApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.greeting.GreetingRestApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.greeting.html">com.greeting</a> &gt; GreetingRestApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.858s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDeleteGreeting</td>
+<td>0.654s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetGreeting</td>
+<td>0.045s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNormalDeleteGreeting</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testNormalGetGreeting</td>
+<td>0.136s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:37:12.280 [Test worker] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.greeting.GreetingRestApplicationTests]
+14:37:12.289 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+14:37:12.293 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+14:37:12.302 [Test worker] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.greeting.GreetingRestApplicationTests] from class [org.springframework.test.context.web.WebTestContextBootstrapper]
+14:37:12.318 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@10c19a1d declaringClass = 'com.greeting.GreetingRestApplicationTests', classes = '{class com.greeting.GreetingRestApplication}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+14:37:12.324 [Test worker] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.greeting.GreetingRestApplicationTests]
+14:37:12.327 [Test worker] DEBUG o.s.t.c.w.WebTestContextBootstrapper - @TestExecutionListeners is not present for class [com.greeting.GreetingRestApplicationTests]: using defaults.
+14:37:12.334 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+14:37:12.344 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+14:37:12.345 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/TransactionDefinition]
+14:37:12.347 [Test worker] INFO  o.s.t.c.w.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1fac2c0b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2209b1ea, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@ba586f7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@44439efe]
+14:37:12.351 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.greeting.GreetingRestApplicationTests]
+14:37:12.351 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.greeting.GreetingRestApplicationTests]
+14:37:12.352 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.greeting.GreetingRestApplicationTests]
+14:37:12.352 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.greeting.GreetingRestApplicationTests]
+14:37:12.356 [Test worker] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5028c4a3 testClass = GreetingRestApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@29f3a8b9 testClass = GreetingRestApplicationTests, locations = '{}', classes = '{class com.greeting.GreetingRestApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+14:37:12.357 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.greeting.GreetingRestApplicationTests]
+14:37:12.358 [Test worker] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.greeting.GreetingRestApplicationTests]
+14:37:12.416 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+14:37:12.418 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+14:37:12.418 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+14:37:12.419 [Test worker] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.2.7.RELEASE)
+
+2015-10-21 14:37:12.585  INFO 16710 --- [    Test worker] c.greeting.GreetingRestApplicationTests  : Starting GreetingRestApplicationTests on ramon-Inspiron-5520 with PID 16710 (/home/ramon/workspace/GreetingRest/build/classes/test started by ramon in /home/ramon/workspace/GreetingRest)
+2015-10-21 14:37:12.819  INFO 16710 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1b37f412: startup date [Wed Oct 21 14:37:12 CLT 2015]; root of context hierarchy
+2015-10-21 14:37:13.299  INFO 16710 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-10-21 14:37:14.291  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@1b37f412: startup date [Wed Oct 21 14:37:12 CLT 2015]; root of context hierarchy
+2015-10-21 14:37:14.353  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:14.354  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:14.357  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-10-21 14:37:14.358  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-10-21 14:37:14.391  INFO 16710 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-21 14:37:14.391  INFO 16710 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-21 14:37:14.430  INFO 16710 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-10-21 14:37:14.541  INFO 16710 --- [    Test worker] c.greeting.GreetingRestApplicationTests  : Started GreetingRestApplicationTests in 2.114 seconds (JVM running for 2.968)
+2015-10-21 14:37:14.566  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:14.567  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:14.579  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@7b8ed85c
+2015-10-21 14:37:14.588  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:14.588  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:14.589  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 1 ms
+2015-10-21 14:37:14.695  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:14.695  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:14.706  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@535b89c0
+2015-10-21 14:37:14.711  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:14.711  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:14.711  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2015-10-21 14:37:14.720  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:14.720  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:14.731  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@476e6f9
+2015-10-21 14:37:14.736  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:14.736  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:14.736  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2015-10-21 14:37:14.773  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:14.773  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:14.782  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@14a1a301
+2015-10-21 14:37:14.785  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:14.786  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:14.786  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2015-10-21 14:37:15.375  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:15.376  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:15.385  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@8ee35cb
+2015-10-21 14:37:15.388  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:15.388  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:15.388  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+2015-10-21 14:37:15.391  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/delete/{id}],methods=[DELETE],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.deleteGreeting(int)
+2015-10-21 14:37:15.391  INFO 16710 --- [    Test worker] ilder$StaticRequestMappingHandlerMapping : Mapped &quot;{[/GreetingRest/get/{id}],methods=[GET],produces=[application/json]}&quot; onto public org.springframework.http.ResponseEntity&lt;com.greeting.modelo.Greeting&gt; com.greeting.controller.GreetingController.getGreeting(int)
+2015-10-21 14:37:15.399  INFO 16710 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@916c63
+2015-10-21 14:37:15.402  INFO 16710 --- [    Test worker] o.s.mock.web.MockServletContext          : Initializing Spring FrameworkServlet ''
+2015-10-21 14:37:15.403  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2015-10-21 14:37:15.403  INFO 16710 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 0 ms
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.7</a> at 21-10-2015 14:37:15</p>
+</div>
+</div>
+</body>
+</html>
