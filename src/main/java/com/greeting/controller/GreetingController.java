@@ -1,5 +1,7 @@
 package com.greeting.controller;
 
+import static org.springframework.http.HttpStatus.NOT_FOUND;
+import static org.springframework.http.HttpStatus.OK;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -7,7 +9,6 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,20 +39,18 @@ public class GreetingController {
     @ResponseBody
     public ResponseEntity<Greeting> getGreeting(@PathVariable("id") int id) {
         if(mygreetings.size()-1 < id){
-            return new ResponseEntity<Greeting>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Greeting>(NOT_FOUND);
         }else{
-            return new ResponseEntity<Greeting>(mygreetings.get(id),
-                    HttpStatus.OK);
+            return new ResponseEntity<Greeting>(mygreetings.get(id),OK);
         }
     }
     @RequestMapping(value = "/delete/{id}", method = DELETE, produces = { APPLICATION_JSON_VALUE })
     @ResponseBody
     public ResponseEntity<Greeting> deleteGreeting(@PathVariable("id") int id) {
         if(mygreetings.size()-1 < id){
-            return new ResponseEntity<Greeting>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Greeting>(NOT_FOUND);
         }else{
-            return new ResponseEntity<Greeting>(mygreetings.remove(id),
-                    HttpStatus.OK);
+            return new ResponseEntity<Greeting>(mygreetings.remove(id),OK);
         }
     }
 }

@@ -1,6 +1,5 @@
 package com.greeting;
 
-
 import static org.hamcrest.Matchers.equalTo;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -11,37 +10,37 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import com.greeting.controller.GreetingController;
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+@RunWith(MockitoJUnitRunner.class)
 
-
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = GreetingRestApplication.class)
-@WebAppConfiguration
-public class GreetingRestApplicationTests {
+public class TestGreetingRestApplication {
     private MockMvc mvc;
     @Before
     public void setUp(){
         mvc = MockMvcBuilders.standaloneSetup(new GreetingController()).build();
         RestAssuredMockMvc.standaloneSetup(new GreetingController());
     }
+    
+    
 	@Test
 	public void testGetGreeting() {
-		RestAssuredMockMvc.given().
+		RestAssuredMockMvc.
+		given().
 		when().
 		   get("/GreetingRest/get/{id}",0).
 	    then().
 	       statusCode(200).
 	       body("message", equalTo("Hello World"));
 	}
+	
+	
 	@Test
 	public void testNormalGetGreeting()throws Exception{
 	    mvc.perform(
